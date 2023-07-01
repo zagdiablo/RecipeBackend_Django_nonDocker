@@ -25,4 +25,5 @@ jobs:
 
       # Move into the Django project folder (./app) and run pytest
       - name: Test
+        working-directory: ./app
         run: python manage.py test
