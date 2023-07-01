@@ -8,5 +8,7 @@ jobs:
     name: Unit Test
     runs-on: ubuntu-20.04
     steps:
+      - name: change directory
+        run: cd app/
       - name: Unit Testing
-        run: python app/app/manage.py test
+        run: python manage.py test
